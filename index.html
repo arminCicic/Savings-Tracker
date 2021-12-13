@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Savings Tracker</title>
+  </head>
+  <body>
+    <div class="header">
+      <h2>Savings Tracker</h2>
+      <img src="./savings.png" alt="savings-icon" />
+    </div>
+
+    <div class="container">
+      <h4>Total saved</h4>
+      <h1 id="balance">200.00€</h1>
+
+      <h3>History</h3>
+      <ul id="list" class="list"></ul>
+
+      <h3>Add new transaction</h3>
+      <form id="form">
+        <div class="form-control">
+          <label for="date">Date</label>
+          <input type="date" id="date" />
+        </div>
+        <div class="form-control">
+          <label for="amount">Amount <br /> </label>
+          <input type="number" id="amount" placeholder="Enter amount..." />
+        </div>
+        <button class="btn">Add savings</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
